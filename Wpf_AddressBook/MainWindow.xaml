@@ -8,9 +8,46 @@
         Title="Adressbok" Height="500" Width="600">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <StackPanel>
+                <TextBlock Text="Förnamn"/>
+                <TextBox/>
+                <TextBlock  Text="Efternamn"/>
+                <TextBox/>
+                <TextBlock Text="E-postaddress"/>
+                <TextBox/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                        <StackPanel Grid.Column="0">
+                            <TextBlock/>
+                            <TextBox/>
+                        </StackPanel>
+                       
+                    <StackPanel Grid.Column="1">
+                            <TextBlock/>
+                            <TextBox/>
+                        </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBlock/>
+                        <TextBox/>
+                    </StackPanel>
+
+                </Grid>
+               
+
+            </StackPanel>
+        </Grid>
         
 
     </Grid>
